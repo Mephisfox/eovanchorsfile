@@ -391,7 +391,7 @@ const UI = {
     renderSlot: (item, label, charId, bIdx, type) => {
         if (!item) return `<div class="anchor-slot empty">${label}</div>`;
         let srcTag = item.src.replace('获取','').replace('商店','');
-        if(srcTag.length > 5) srcTag = srcTag.substring(0,4)+".";
+        if(srcTag.length > 8) srcTag = srcTag.substring(0,9)+"..";
         const imgPath = `anchors/${item.name}.png`;
         
         let skillHtml = `<span class="anchor-skill">${item.fixed}</span>`;
@@ -606,4 +606,5 @@ const App = {
 document.addEventListener('DOMContentLoaded', () => { UI.updateViewMode(); });
 </script>
 </body>
+
 </html>
