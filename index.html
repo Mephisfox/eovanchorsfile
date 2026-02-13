@@ -65,7 +65,8 @@
         /* 修复标签垂直居中问题 */
         .char-tag { 
             font-size: 0.65rem; background: rgba(255,255,255,0.5); 
-            padding: 0 6px; border: 1px solid var(--ink-black); border-radius: 4px; 
+            padding: 2px 6px 0 6px; /* 顶部加1px，底部0，左右6px */
+			border: 1px solid var(--ink-black); border-radius: 4px; 
             display: inline-flex; align-items: center; justify-content: center;
             height: 18px; line-height: 1;
         }
@@ -608,3 +609,4 @@ document.addEventListener('DOMContentLoaded', () => { UI.updateViewMode(); });
 </body>
 
 </html>
+
